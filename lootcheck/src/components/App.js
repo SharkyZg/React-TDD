@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Wallet from './Wallet';
 import Loot from './Loot';
 
-class App extends Component  {
-    render() {
+const App = () => {
         return (
             <div>
                 <h2>
@@ -13,9 +12,9 @@ class App extends Component  {
                 <Wallet />
                 <hr />
                 <Loot />
+                <div>Powered by <a target='_blank' href='https://www.coindesk.com/price'>Coindesk</a></div>
             </div>
         )
-    }
 }
 
 export default App
